@@ -26,3 +26,4 @@ jobs:
           context: .
           push: true
           tags: mercuriaal/devops:latest
+          file: Dockerfile.production
