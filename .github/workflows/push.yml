@@ -9,6 +9,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: debug
+        run: pwd
+      - name: debug2
+        run: ls
       - run: make test
         working-directory: .
   push:
