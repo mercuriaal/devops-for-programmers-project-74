@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: make test
+      - run: docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
   push:
     needs: test
     runs-on: ubuntu-latest
