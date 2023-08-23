@@ -3,4 +3,8 @@ services:
     extends:
       file: docker-compose.yml
       service: app
+    build:
+      dockerfile: Dockerfile
     command: npm run dev
+    volumes:
+      - ./app:/app
