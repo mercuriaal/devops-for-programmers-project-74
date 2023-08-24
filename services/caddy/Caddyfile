@@ -1,4 +1,4 @@
-localhost:2020 {
+localhost {
   log {
     format json
   }
