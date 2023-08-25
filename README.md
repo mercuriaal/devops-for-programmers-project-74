@@ -3,3 +3,17 @@
 
 ### CI/CD status:
 [![ci](https://github.com/mercuriaal/devops-for-programmers-project-74/actions/workflows/push.yml/badge.svg)](https://github.com/mercuriaal/devops-for-programmers-project-74/actions/workflows/push.yml)
+
+
+Системные требования:
+
+- Linux
+- Docker
+
+Запуск тестов:
+
+`make test`
+
+Запуск сервиса:
+
+`make run`
