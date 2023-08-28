@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo ${{ env }}
+      - name: Create env file
+        run: |
+          echo "${{ secrets.DOTENV }}" > .env
       - run: make test
   push:
     needs: test
