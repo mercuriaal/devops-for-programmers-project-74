@@ -10,10 +10,11 @@
 - Linux
 - Docker
 
-Запуск тестов:
+```bash
+make test # запуск тестов
+make run # запуск сервиса
+make build # сборка образа
+make push # пуш в dockerhub
+```
 
-`make test`
-
-Запуск сервиса:
-
-`make run`
+[Ссылка на образ](https://hub.docker.com/repository/docker/mercuriaal/devops/general) 
