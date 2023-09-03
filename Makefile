@@ -1,11 +1,11 @@
-test:
+compose-test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
-run:
+compose-run:
 	docker-compose up
 
-build:
+compose-build:
 	docker-compose -f docker-compose.yml build app
 
-push:
+compose-push:
 	docker-compose -f docker-compose.yml push app

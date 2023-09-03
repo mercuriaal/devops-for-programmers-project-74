@@ -7,12 +7,12 @@ services:
     volumes:
       - ./app:/app
   caddy:
-    image: caddy:latest
+    image: caddy:2.7
     restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - $PWD/services/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - app

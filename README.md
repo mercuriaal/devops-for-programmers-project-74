@@ -11,10 +11,10 @@
 - Docker
 
 ```bash
-make test # запуск тестов
-make run # запуск сервиса
-make build # сборка образа
-make push # пуш в dockerhub
+make compose-test # запуск тестов
+make compose-run # запуск сервиса
+make compose-build # сборка образа
+make compose-push # пуш в dockerhub
 ```
 
 [Ссылка на образ](https://hub.docker.com/repository/docker/mercuriaal/devops/general) 
